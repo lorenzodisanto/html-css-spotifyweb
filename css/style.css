@@ -1,0 +1,64 @@
+:root {
+  /* PALETTE COLORI */
+  --navbar-bg-color: #000000;
+  --player-bg-color: #282828;
+  --body-bg-color: #141922;
+  --text-primary-color: #f3f3f3;
+  --text-secondary-color: #5e5e5e;
+
+  /* LAYOUT */
+  --app-navbar-width: 300px;
+  --top-bar-height: 120px;
+  --player-height: 120px;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--body-bg-color);
+  color: var(--text-primary-color);
+}
+
+/* APP TOP */
+
+#app-top {
+  height: calc(100vh - var(--player-height));
+  display: flex;
+}
+
+/* APP NAVBAR */
+
+#app-navbar {
+  width: var(--app-navbar-width);
+  background-color: var(--navbar-bg-color);
+  flex-shrink: 0;
+}
+
+/* APP MAIN */
+
+#app-main {
+  flex-grow: 1;
+}
+
+#main-top-bar {
+  height: var(--top-bar-height);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#main-content {
+  overflow: auto;
+  height: calc(100% - var(--top-bar-height));
+}
+
+/* APP PLAYER */
+
+#app-player {
+  background-color: var(--player-bg-color);
+  height: var(--player-height);
+}
