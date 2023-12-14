@@ -58,10 +58,10 @@ img {
 
 .card {
   padding: 15px;
-
-  /* debug */
+  text-align: center;
+  /* debug 
   min-height: 200px;
-  background-color: gray;
+  background-color: gray;*/
 }
 
 /* APP TOP */
@@ -188,11 +188,17 @@ a {
   margin-right: 10px;
   font-size: 0.6rem;
   font-weight: bold;
+  color: var(--text-primary-color);
 }
 
 #main-content {
   overflow: auto;
   height: calc(100% - var(--top-bar-height));
+}
+
+#main-content h5 {
+  color: var(--text-secondary-color);
+  padding: 10px 0;
 }
 
 #main-content ul {
@@ -204,10 +210,19 @@ a {
 
 #main-content li {
   padding: 10px 20px;
+  font-weight: bold;
 }
 
 h2 {
   padding-top: 30px;
+}
+
+h4 {
+  padding-top: 10px;
+}
+
+.img-radius {
+  border-radius: 50%;
 }
 
 /* APP PLAYER */
