@@ -111,8 +111,23 @@ img {
   margin-right: 5px;
 }
 
+.mini-log-txt .select {
+  color: var(--text-primary-color);
+}
+
+.mini-log-txt:hover {
+  color: var(--text-primary-color);
+}
+
 .playlist {
   margin-top: 10px;
+}
+
+.navbar-link:hover .add-playlist {
+  background-color: var(--text-primary-color);
+}
+.navbar-link:hover a {
+  color: var(--text-primary-color);
 }
 
 .playlist h4 {
@@ -138,6 +153,10 @@ img {
 a {
   padding: 10px 0;
   color: var(--text-secondary-color);
+}
+
+.nav-list a:hover {
+  color: var(--text-primary-color);
 }
 
 .navbar-foot {
@@ -166,6 +185,10 @@ a {
 
 .user-img img {
   object-fit: cover;
+}
+
+.navbar-foot-login span {
+  color: var(--text-primary-color);
 }
 
 /* APP MAIN */
