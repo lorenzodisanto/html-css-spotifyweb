@@ -83,6 +83,7 @@ img {
   flex-direction: column;
   flex-shrink: 0;
   padding: 10px;
+  overflow-y: hidden;
 }
 
 .logo-cont {
@@ -104,6 +105,10 @@ img {
 
   align-items: center;
   padding: 5px 0;
+}
+
+.navbar-link.border {
+  border-left: 4px solid green;
 }
 
 .mini-log {
@@ -146,13 +151,17 @@ img {
   margin-right: 5px;
 }
 
+.nav-list {
+  overflow: auto;
+}
+
 .nav-list ul {
   list-style: none;
 }
 
 #app-navbar li,
 a {
-  padding: 10px 0;
+  padding: 5px 0;
   color: var(--text-secondary-color);
 }
 
@@ -244,8 +253,24 @@ a {
 }
 
 #main-content li {
-  padding: 10px 20px;
+  padding: 10px 15px;
   font-weight: bold;
+  font-size: 0.9rem;
+}
+
+#main-content .link-active {
+  position: relative;
+}
+
+#main-content .link-active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translate(-50%, 0);
+  background-color: green;
+  width: 40px;
+  height: 4px;
 }
 
 .card-img {
@@ -287,6 +312,10 @@ h4 {
 }
 
 .img-radius {
+  border-radius: 50%;
+}
+
+.play-card.cerchio {
   border-radius: 50%;
 }
 
